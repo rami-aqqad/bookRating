@@ -1,4 +1,4 @@
-package com.aiinarabic.bookinfoservice.resources;
+package com.aiinarabic.bookinfoservice.controllers;
 
 import com.aiinarabic.bookinfoservice.models.Book;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/books")
-public class BookResource {
+public class BookController {
 
     @RequestMapping("/{bookId}")
     public Book getBookInfo(@PathVariable("bookId") String bookId){

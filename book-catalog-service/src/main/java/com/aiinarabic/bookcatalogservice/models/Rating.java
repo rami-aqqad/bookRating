@@ -1,7 +1,8 @@
 package com.aiinarabic.bookcatalogservice.models;
 
 public class Rating {
-
+    public Rating() {
+    }
 
     private String bookId;
     private int rating;
