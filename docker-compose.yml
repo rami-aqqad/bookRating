@@ -1,0 +1,57 @@
+version: '3.4'
+
+services:
+
+  book-catalog-service:
+    build:
+      context: ./book-catalog-service
+      dockerfile: Dockerfile
+    image: book-catalog-service:latest
+    ports:
+      - 8085:8085
+    environment:
+      - SPRING_APPLICATION_NAME=book-catalog-service
+    networks:
+      - ibomade
+
+
+  book-info-service:
+    build:
+      context: ./book-info-service
+      dockerfile: Dockerfile
+    image: book-info-service:latest
+    ports:
+      - 8086:8086
+    environment:
+        - SPRING_APPLICATION_NAME=book-info-service
+    networks:
+      - ibomade
+
+  rating-data-service:
+    build:
+      context: ./rating-data-service
+      dockerfile: Dockerfile
+    image: rating-data-service:latest
+    ports:
+      - 8087:8087
+    environment:
+      - SPRING_APPLICATION_NAME=rating-data-service
+    networks:
+      - ibomade
+
+  eureka:
+    build:
+      context: ./eureka
+      dockerfile: Dockerfile
+    image: eureka:latest
+    ports:
+      - 8761:8761
+    environment:
+      - SPRING_APPLICATION_NAME=eureka
+    networks:
+      - ibomade
+
+
+
+networks:
+  ibomade:

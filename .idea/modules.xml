@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/book-catalog-service/book-catalog-service.iml" filepath="$PROJECT_DIR$/book-catalog-service/book-catalog-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/book-info-service/book-info-service.iml" filepath="$PROJECT_DIR$/book-info-service/book-info-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/bookRating.iml" filepath="$PROJECT_DIR$/.idea/bookRating.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka/eureka.iml" filepath="$PROJECT_DIR$/eureka/eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/rating-data-service/rating-data-service.iml" filepath="$PROJECT_DIR$/rating-data-service/rating-data-service.iml" />
     </modules>
   </component>
